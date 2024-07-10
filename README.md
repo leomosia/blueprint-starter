@@ -1,12 +1,14 @@
 # Blueprint
 
-Blueprint is a local-first operating system built from folders, Markdown files, templates, scripts, and repeatable working practices.
+Current release: `mvp.2024.7.2.3`
 
-It provides a structured environment for turning thought into organised action and repeated work into durable systems.
+Blueprint is a local-first operating system for organising life, work, projects, research, and repeated practice using plain files.
+
+This repository starts with the smallest public form of Blueprint: a clear idea, a working philosophy, and a simple operating loop.
 
 ## What Blueprint Is
 
-Blueprint combines:
+Blueprint is built from ordinary materials:
 
 ```text
 Folders
@@ -16,17 +18,9 @@ Scripts
 Operating practices
 ```
 
-Folders provide the environment.
+Folders provide the environment. Markdown files hold the working objects. Templates create repeatable structures. Scripts reduce manual friction. Operating practices define how work moves through the system.
 
-Markdown files contain the working objects.
-
-Templates establish repeatable structures.
-
-Scripts reduce manual friction.
-
-Operating practices define how work moves through the system.
-
-Together, they form a practical operating system for thought, work, projects, research, review, and continuous improvement.
+Together, they form a practical operating system for thought, action, review, and continuous improvement.
 
 ## Why Blueprint Exists
 
@@ -44,17 +38,23 @@ Blueprint creates a structure in which experience can become a reusable system.
 
 ```text
 Experience
-    ↓
+    |
+    v
 Observation
-    ↓
+    |
+    v
 Pattern
-    ↓
+    |
+    v
 Documentation
-    ↓
+    |
+    v
 Practice
-    ↓
+    |
+    v
 System
-    ↓
+    |
+    v
 Improvement
 ```
 
@@ -64,17 +64,23 @@ Blueprint helps operators work while also improving how the work is performed.
 
 ```text
 Capture
-    ↓
+    |
+    v
 Define
-    ↓
+    |
+    v
 Plan
-    ↓
+    |
+    v
 Execute
-    ↓
+    |
+    v
 Review
-    ↓
+    |
+    v
 Sustain
-    ↓
+    |
+    v
 Repeat
 ```
 
@@ -108,30 +114,40 @@ The operator remains able to inspect, understand, and modify the system.
 
 Blueprint evolves through use and is never treated as permanently complete.
 
-## Repository Structure
+## Release Stage
+
+This is the first reconstructed public release of Blueprint.
+
+Blueprint began as a personal local operating system in March 2024. This release reconstructs the first public-facing seed from July 2024: the moment the idea becomes a shareable repository.
+
+The release number follows the Blueprint staged versioning pattern:
 
 ```text
-system/          Working Blueprint filesystem
-templates/       Reusable document structures
-scripts/         Filesystem automation
-practices/       Repeatable operating practices
-modules/         Blueprint capability definitions
-docs/            System documentation
-specifications/  Formal system contracts
-examples/        Example Blueprint implementations
-decisions/       Architecture decision records
-diagrams/        System diagrams
-tests/           Structure and script tests
-archive/         Retired experiments and structures
+mvp.2024.7.2.3
 ```
+
+Where:
+
+- `mvp` is the maturity stage.
+- `2024` is the year.
+- `7` is the month.
+- `2` is the week of the month.
+- `3` is the day of the week, with Monday as day 1.
+
+## Template Direction
+
+Blueprint is intended to become a template repository that people can use to start their own local operating system.
+
+Future releases may add folder structures, templates, scripts, practices, and migration guidance. The goal is that users can adopt newer Blueprint structures without losing or overwriting their personal work.
 
 ## Getting Started
 
-Clone the repository:
+Clone the repository and read the operating idea:
 
 ```bash
 git clone https://github.com/blueprint-os/blueprint.git
 cd blueprint
+less README.md
 ```
 
 ## Licence
