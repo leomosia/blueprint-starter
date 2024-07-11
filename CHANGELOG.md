@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Refined the README prose into paragraph-led sections for a smoother public reading experience.
+
 ## mvp.2024.7.2.3
 
 First reconstructed public release of Blueprint.

@@ -2,9 +2,7 @@
 
 Current release: `mvp.2024.7.2.3`
 
-Blueprint is a local-first operating system for organising life, work, projects, research, and repeated practice using plain files.
-
-This repository starts with the smallest public form of Blueprint: a clear idea, a working philosophy, and a simple operating loop.
+Blueprint is a local-first operating system for organising life, work, projects, research, and repeated practice using plain files. This repository starts with the smallest public form of Blueprint: a clear idea, a working philosophy, and a simple operating loop.
 
 ## What Blueprint Is
 
@@ -18,23 +16,11 @@ Scripts
 Operating practices
 ```
 
-Folders provide the environment. Markdown files hold the working objects. Templates create repeatable structures. Scripts reduce manual friction. Operating practices define how work moves through the system.
-
-Together, they form a practical operating system for thought, action, review, and continuous improvement.
+Folders provide the environment, Markdown files hold the working objects, templates create repeatable structures, scripts reduce manual friction, and operating practices define how work moves through the system. Together, they form a practical operating system for thought, action, review, and continuous improvement.
 
 ## Why Blueprint Exists
 
-Work often begins informally.
-
-Ideas are captured in scattered notes.
-
-Processes live inside people's heads.
-
-Repeated tasks are performed manually.
-
-Lessons disappear after the work is completed.
-
-Blueprint creates a structure in which experience can become a reusable system.
+Work often begins informally. Ideas are captured in scattered notes, processes live inside people's heads, repeated tasks are performed manually, and lessons disappear after the work is completed. Blueprint creates a structure in which experience can become a reusable system.
 
 ```text
 Experience
@@ -116,9 +102,7 @@ Blueprint evolves through use and is never treated as permanently complete.
 
 ## Release Stage
 
-This is the first reconstructed public release of Blueprint.
-
-Blueprint began as a personal local operating system in March 2024. This release reconstructs the first public-facing seed from July 2024: the moment the idea becomes a shareable repository.
+This is the first reconstructed public release of Blueprint. Blueprint began as a personal local operating system in March 2024. This release reconstructs the first public-facing seed from July 2024: the moment the idea becomes a shareable repository.
 
 The release number follows the Blueprint staged versioning pattern:
 
@@ -142,9 +126,7 @@ Future releases may add folder structures, templates, scripts, practices, and mi
 
 ## Release Notes
 
-Blueprint keeps a permanent project history in `CHANGELOG.md`.
-
-GitHub release notes are stored as one file per release in `releases/`.
+Blueprint keeps a permanent project history in `CHANGELOG.md`. GitHub release notes are stored as one file per release in `releases/`.
 
 To publish a release from an existing local tag:
 
