@@ -140,6 +140,18 @@ Blueprint is intended to become a template repository that people can use to sta
 
 Future releases may add folder structures, templates, scripts, practices, and migration guidance. The goal is that users can adopt newer Blueprint structures without losing or overwriting their personal work.
 
+## Release Notes
+
+Blueprint keeps a permanent project history in `CHANGELOG.md`.
+
+GitHub release notes are stored as one file per release in `releases/`.
+
+To publish a release from an existing local tag:
+
+```bash
+scripts/release.sh mvp.2024.7.2.3
+```
+
 ## Getting Started
 
 Clone the repository and read the operating idea:
