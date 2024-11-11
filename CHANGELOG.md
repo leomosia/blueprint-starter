@@ -1,8 +1,11 @@
 # Changelog
 
-## Unreleased
+## mvp.2024.11.3.1
 
 - Refined the README prose into paragraph-led sections for a smoother public reading experience.
+- Introduced the first L5 folder structure based on the Leo Mosia Framework lifecycle.
+- Added `define/`, `plan/`, `execute/`, `review/`, and `sustain/` as lightweight starter folders.
+- Moved release support files outside the visible L5 folders so the root structure remains focused on the lifecycle.
 
 ## mvp.2024.7.2.3
 

@@ -1,0 +1,29 @@
+# Local agent and workspace state
+.agents/
+.codex/
+
+# Local study notes
+RELEASE_WORKFLOW_NOTES.md
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+coverage/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db

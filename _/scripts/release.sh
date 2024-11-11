@@ -4,16 +4,16 @@ set -euo pipefail
 usage() {
   cat <<'USAGE'
 Usage:
-  scripts/release.sh <version>
+  _/scripts/release.sh <version>
 
 Example:
-  scripts/release.sh mvp.2024.7.2.3
+  _/scripts/release.sh mvp.2024.11.3.1
 
 Requires:
   - git
   - GitHub CLI: gh
   - a local tag matching <version>
-  - release notes at releases/<version>.md
+  - release notes at .releases/<version>.md
 USAGE
 }
 
@@ -29,7 +29,7 @@ if [ -z "$version" ]; then
   exit 1
 fi
 
-notes_file="releases/${version}.md"
+notes_file=".releases/${version}.md"
 
 if [ ! -f "$notes_file" ]; then
   echo "Missing release notes: ${notes_file}" >&2

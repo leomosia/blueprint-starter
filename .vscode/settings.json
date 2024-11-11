@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.vscode": true,
+    "**/.releases": true,
+    "**/.agents": true,
+    "**/.codex": true,
+    "**/.gitignore": true
+  }
+}

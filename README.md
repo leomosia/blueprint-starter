@@ -1,6 +1,6 @@
 # Blueprint
 
-Current release: `mvp.2024.7.2.3`
+Current release: `mvp.2024.11.3.1`
 
 Blueprint is a local-first operating system for organising life, work, projects, research, and repeated practice using plain files. This repository starts with the smallest public form of Blueprint: a clear idea, a working philosophy, and a simple operating loop.
 
@@ -70,6 +70,20 @@ Sustain
 Repeat
 ```
 
+## L5 Structure
+
+Blueprint now starts with the L5 lifecycle structure from the Leo Mosia Framework:
+
+```text
+define/    Clarify what matters and why.
+plan/      Turn clarity into sequence, timing, and resources.
+execute/   Do the work and capture what happens.
+review/    Reflect on outcomes, lessons, and decisions.
+sustain/   Preserve energy, continuity, and long-term rhythm.
+```
+
+The folders are intentionally light in this release. They provide a first usable operating shape without importing the full mature framework too early.
+
 ## Core Principles
 
 ### Local First
@@ -102,21 +116,21 @@ Blueprint evolves through use and is never treated as permanently complete.
 
 ## Release Stage
 
-This is the first reconstructed public release of Blueprint. Blueprint began as a personal local operating system in March 2024. This release reconstructs the first public-facing seed from July 2024: the moment the idea becomes a shareable repository.
+This release is the first structural milestone after the README-only seed. Blueprint began as a personal local operating system in March 2024, became a public-facing idea in July 2024, and now introduces the first lightweight L5 folder structure.
 
 The release number follows the Blueprint staged versioning pattern:
 
 ```text
-mvp.2024.7.2.3
+mvp.2024.11.3.1
 ```
 
 Where:
 
 - `mvp` is the maturity stage.
 - `2024` is the year.
-- `7` is the month.
-- `2` is the week of the month.
-- `3` is the day of the week, with Monday as day 1.
+- `11` is the month.
+- `3` is the week of the month.
+- `1` is the day of the week, with Monday as day 1.
 
 ## Template Direction
 
@@ -126,12 +140,12 @@ Future releases may add folder structures, templates, scripts, practices, and mi
 
 ## Release Notes
 
-Blueprint keeps a permanent project history in `CHANGELOG.md`. GitHub release notes are stored as one file per release in `releases/`.
+Blueprint keeps a permanent project history in `CHANGELOG.md`. GitHub release notes are stored as one file per release in `.releases/`, keeping release machinery separate from the visible L5 operating folders.
 
 To publish a release from an existing local tag:
 
 ```bash
-scripts/release.sh mvp.2024.7.2.3
+_/scripts/release.sh mvp.2024.11.3.1
 ```
 
 ## Getting Started
