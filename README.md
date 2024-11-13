@@ -138,6 +138,22 @@ Blueprint is intended to become a template repository that people can use to sta
 
 Future releases may add folder structures, templates, scripts, practices, and migration guidance. The goal is that users can adopt newer Blueprint structures without losing or overwriting their personal work.
 
+## Script Setup
+
+Blueprint helper scripts live in `_/scripts/`.
+
+To see the PATH command for your local checkout:
+
+```bash
+_/scripts/setup_path.sh --print
+```
+
+To add Blueprint scripts to your shell profile:
+
+```bash
+_/scripts/setup_path.sh --install
+```
+
 ## Release Notes
 
 Blueprint keeps a permanent project history in `CHANGELOG.md`. GitHub release notes are stored as one file per release in `.releases/`, keeping release machinery separate from the visible L5 operating folders.

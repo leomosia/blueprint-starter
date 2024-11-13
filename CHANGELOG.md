@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added script PATH setup support for local Blueprint helper commands.
+
 ## mvp.2024.11.3.1
 
 - Refined the README prose into paragraph-led sections for a smoother public reading experience.
