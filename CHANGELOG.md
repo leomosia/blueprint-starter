@@ -1,8 +1,13 @@
 # Changelog
 
-## Unreleased
+## mvp.2025.1.3.1
 
 - Added script PATH setup support for local Blueprint helper commands.
+- Introduced `_/systems/inputsys/` as the first content and knowledge intake system.
+- Added the eight InputSys stages: inbox, processing, analysis, transformation, drafting, reviewing, utilization, and sharing.
+- Introduced `_/systems/outputsys/` as the first distribution and publishing system.
+- Added the eight OutputSys stages: intake, atomization, platform, publishing, amplification, engagements, analytics, and archiving.
+- Added helper scripts for creating content items, seeding input material, moving items through stages, handing off to OutputSys, and generating local stats.
 
 ## mvp.2024.11.3.1
 

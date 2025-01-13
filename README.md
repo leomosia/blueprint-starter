@@ -1,6 +1,6 @@
 # Blueprint
 
-Current release: `mvp.2024.11.3.1`
+Current release: `mvp.2025.1.3.1`
 
 Blueprint is a local-first operating system for organising life, work, projects, research, and repeated practice using plain files. This repository starts with the smallest public form of Blueprint: a clear idea, a working philosophy, and a simple operating loop.
 
@@ -116,19 +116,19 @@ Blueprint evolves through use and is never treated as permanently complete.
 
 ## Release Stage
 
-This release is the first structural milestone after the README-only seed. Blueprint began as a personal local operating system in March 2024, became a public-facing idea in July 2024, and now introduces the first lightweight L5 folder structure.
+This release introduces the first Blueprint system beyond the L5 operating shell. Blueprint began as a personal local operating system in March 2024, became a public-facing idea in July 2024, introduced the lightweight L5 structure in November 2024, and now adds InputSys as the content and knowledge intake side of the system.
 
 The release number follows the Blueprint staged versioning pattern:
 
 ```text
-mvp.2024.11.3.1
+mvp.2025.1.3.1
 ```
 
 Where:
 
 - `mvp` is the maturity stage.
-- `2024` is the year.
-- `11` is the month.
+- `2025` is the year.
+- `1` is the month.
 - `3` is the week of the month.
 - `1` is the day of the week, with Monday as day 1.
 
@@ -137,6 +137,12 @@ Where:
 Blueprint is intended to become a template repository that people can use to start their own local operating system.
 
 Future releases may add folder structures, templates, scripts, practices, and migration guidance. The goal is that users can adopt newer Blueprint structures without losing or overwriting their personal work.
+
+## Blueprint Systems
+
+Blueprint includes support systems under `_/systems/`.
+
+The first systems are `_/systems/inputsys/` and `_/systems/outputsys/`. InputSys turns raw inputs into usable building blocks. OutputSys turns finished assets into distribution, engagement, feedback, and reusable public value.
 
 ## Script Setup
 
@@ -154,6 +160,16 @@ To add Blueprint scripts to your shell profile:
 _/scripts/setup_path.sh --install
 ```
 
+Current helpers include:
+
+```text
+create_content_item.sh
+seed.sh
+move.sh
+output.sh
+stats.sh
+```
+
 ## Release Notes
 
 Blueprint keeps a permanent project history in `CHANGELOG.md`. GitHub release notes are stored as one file per release in `.releases/`, keeping release machinery separate from the visible L5 operating folders.
@@ -161,7 +177,7 @@ Blueprint keeps a permanent project history in `CHANGELOG.md`. GitHub release no
 To publish a release from an existing local tag:
 
 ```bash
-_/scripts/release.sh mvp.2024.11.3.1
+_/scripts/release.sh mvp.2025.1.3.1
 ```
 
 ## Getting Started

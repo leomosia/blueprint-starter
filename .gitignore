@@ -23,6 +23,7 @@ coverage/
 *.temp
 tmp/
 temp/
+_/stats/
 
 # OS files
 .DS_Store
