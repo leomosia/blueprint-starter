@@ -185,8 +185,8 @@ _/scripts/release.sh mvp.2025.1.3.1
 Clone the repository and read the operating idea:
 
 ```bash
-git clone https://github.com/blueprint-os/blueprint.git
-cd blueprint
+git clone https://github.com/leomosia/blueprint-starter.git
+cd blueprint-starter
 less README.md
 ```
 
