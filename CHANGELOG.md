@@ -1,5 +1,11 @@
 # Changelog
 
+## mvp.2025.3.4.1
+
+- Introduced `_/systems/todosys/` as the first execution visibility system.
+- Added the six TodoSys stages: backlog, next, doing, on hold, done, and archive.
+- Added a story creation helper for TodoSys.
+
 ## mvp.2025.1.3.1
 
 - Added script PATH setup support for local Blueprint helper commands.

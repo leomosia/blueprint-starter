@@ -1,6 +1,6 @@
 # Blueprint
 
-Current release: `mvp.2025.1.3.1`
+Current release: `mvp.2025.3.4.1`
 
 Blueprint is a local-first operating system for organising life, work, projects, research, and repeated practice using plain files. This repository starts with the smallest public form of Blueprint: a clear idea, a working philosophy, and a simple operating loop.
 
@@ -116,20 +116,20 @@ Blueprint evolves through use and is never treated as permanently complete.
 
 ## Release Stage
 
-This release introduces the first Blueprint system beyond the L5 operating shell. Blueprint began as a personal local operating system in March 2024, became a public-facing idea in July 2024, introduced the lightweight L5 structure in November 2024, and now adds InputSys as the content and knowledge intake side of the system.
+This release introduces TodoSys as the execution visibility side of Blueprint. Blueprint began as a personal local operating system in March 2024, became a public-facing idea in July 2024, introduced the lightweight L5 structure in November 2024, added InputSys and OutputSys in January 2025, and now adds TodoSys for actionable work movement.
 
 The release number follows the Blueprint staged versioning pattern:
 
 ```text
-mvp.2025.1.3.1
+mvp.2025.3.4.1
 ```
 
 Where:
 
 - `mvp` is the maturity stage.
 - `2025` is the year.
-- `1` is the month.
-- `3` is the week of the month.
+- `3` is the month.
+- `4` is the week of the month.
 - `1` is the day of the week, with Monday as day 1.
 
 ## Template Direction
@@ -142,7 +142,7 @@ Future releases may add folder structures, templates, scripts, practices, and mi
 
 Blueprint includes support systems under `_/systems/`.
 
-The first systems are `_/systems/inputsys/` and `_/systems/outputsys/`. InputSys turns raw inputs into usable building blocks. OutputSys turns finished assets into distribution, engagement, feedback, and reusable public value.
+The first systems are `_/systems/inputsys/`, `_/systems/outputsys/`, and `_/systems/todosys/`. InputSys turns raw inputs into usable building blocks. OutputSys turns finished assets into distribution, engagement, feedback, and reusable public value. TodoSys makes actionable work visible and movable.
 
 ## Script Setup
 
@@ -164,6 +164,7 @@ Current helpers include:
 
 ```text
 create_content_item.sh
+create_story.sh
 seed.sh
 move.sh
 output.sh
@@ -177,7 +178,7 @@ Blueprint keeps a permanent project history in `CHANGELOG.md`. GitHub release no
 To publish a release from an existing local tag:
 
 ```bash
-_/scripts/release.sh mvp.2025.1.3.1
+_/scripts/release.sh mvp.2025.3.4.1
 ```
 
 ## Getting Started
