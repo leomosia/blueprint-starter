@@ -1,5 +1,10 @@
 # Changelog
 
+## mvp.2025.3.4.2
+
+- Introduced `_/systems/backlogsys/` as a lightweight manual backlog system.
+- Added `backlog.md` for rough possible work before it becomes actionable in TodoSys.
+
 ## mvp.2025.3.4.1
 
 - Introduced `_/systems/todosys/` as the first execution visibility system.

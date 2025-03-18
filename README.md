@@ -1,6 +1,6 @@
 # Blueprint
 
-Current release: `mvp.2025.3.4.1`
+Current release: `mvp.2025.3.4.2`
 
 Blueprint is a local-first operating system for organising life, work, projects, research, and repeated practice using plain files. This repository starts with the smallest public form of Blueprint: a clear idea, a working philosophy, and a simple operating loop.
 
@@ -116,12 +116,12 @@ Blueprint evolves through use and is never treated as permanently complete.
 
 ## Release Stage
 
-This release introduces TodoSys as the execution visibility side of Blueprint. Blueprint began as a personal local operating system in March 2024, became a public-facing idea in July 2024, introduced the lightweight L5 structure in November 2024, added InputSys and OutputSys in January 2025, and now adds TodoSys for actionable work movement.
+This release introduces BacklogSys as the lightweight holding place for possible work before it becomes actionable. Blueprint began as a personal local operating system in March 2024, became a public-facing idea in July 2024, introduced the lightweight L5 structure in November 2024, added InputSys and OutputSys in January 2025, added TodoSys in March 2025, and now adds BacklogSys for rough possible work.
 
 The release number follows the Blueprint staged versioning pattern:
 
 ```text
-mvp.2025.3.4.1
+mvp.2025.3.4.2
 ```
 
 Where:
@@ -130,7 +130,7 @@ Where:
 - `2025` is the year.
 - `3` is the month.
 - `4` is the week of the month.
-- `1` is the day of the week, with Monday as day 1.
+- `2` is the day of the week, with Monday as day 1.
 
 ## Template Direction
 
@@ -142,7 +142,7 @@ Future releases may add folder structures, templates, scripts, practices, and mi
 
 Blueprint includes support systems under `_/systems/`.
 
-The first systems are `_/systems/inputsys/`, `_/systems/outputsys/`, and `_/systems/todosys/`. InputSys turns raw inputs into usable building blocks. OutputSys turns finished assets into distribution, engagement, feedback, and reusable public value. TodoSys makes actionable work visible and movable.
+The first systems are `_/systems/inputsys/`, `_/systems/outputsys/`, `_/systems/backlogsys/`, and `_/systems/todosys/`. InputSys turns raw inputs into usable building blocks. OutputSys turns finished assets into distribution, engagement, feedback, and reusable public value. BacklogSys holds possible work before it becomes actionable. TodoSys makes actionable work visible and movable.
 
 ## Script Setup
 
@@ -178,7 +178,7 @@ Blueprint keeps a permanent project history in `CHANGELOG.md`. GitHub release no
 To publish a release from an existing local tag:
 
 ```bash
-_/scripts/release.sh mvp.2025.3.4.1
+_/scripts/release.sh mvp.2025.3.4.2
 ```
 
 ## Getting Started
