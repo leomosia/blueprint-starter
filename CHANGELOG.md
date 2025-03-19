@@ -4,6 +4,7 @@
 
 - Added public-safe InputSys stage READMEs.
 - Added a starter inbox file and whitelist-gated inbox splitter.
+- Clarified that inbox whitelist tags are approved project, body-of-work, and workstream destinations.
 
 ## mvp.2025.3.4.2
 

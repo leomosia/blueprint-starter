@@ -1,36 +1,32 @@
 # whitelist.yml
-# Source of truth for allowed inbox routing tags.
+# Source of truth for approved inbox routing destinations.
 # Rule: only tags listed here are allowed to leave inbox.md.
 #
-# Keep tags lowercase letters only. The splitter currently accepts tags like:
-#   - #idea - ...
-#   - #project - ...
+# A tag is not just a topic label. In Blueprint, a tag should usually represent
+# a project, body of work, life domain, system, or workstream that deserves its
+# own routed inbox.
+#
+# Example:
+#   - #writing - essay idea about local-first systems
+#   routes to:
+#   writing_inbox/writing_inbox.md
+#
+# Keep tags lowercase letters only. The splitter currently accepts simple tags:
+#   - #writing - ...
+#   - #research - ...
 #
 # Add your own tags as your Blueprint develops.
 
 tags:
-  - idea
-  - note
+  # Starter destinations. Replace these with your real projects and bodies of work.
+  - blueprint
+  - bodyofwork
   - project
-  - task
-  - research
-  - article
-  - book
-  - video
-  - podcast
-  - quote
-  - meeting
-  - conversation
-  - observation
-  - lesson
-  - question
-  - decision
   - system
-  - strategy
+  - research
   - writing
-  - draft
   - content
-  - backlog
-  - todo
-  - output
+  - business
+  - learning
+  - life
   - archive

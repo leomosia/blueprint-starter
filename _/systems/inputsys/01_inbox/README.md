@@ -21,6 +21,99 @@ The only rule: **capture first, think later**.
 
 If you hesitate before capturing, the system has already failed you.
 
+## How the inbox works
+
+The inbox starts as one shared capture file:
+
+```text
+inbox.md
+```
+
+You add fast, single-line entries using this format:
+
+```markdown
+- #writing - idea for an essay about personal operating systems
+- #research - collect examples of local-first tools
+- #system - improve the inbox splitter
+```
+
+The tag after `#` is a routing destination. In Blueprint, a destination is usually a project, body of work, life domain, system, or workstream. It is not meant to be a loose social-media-style hashtag.
+
+Allowed destinations live in:
+
+```text
+_inbox_scripts/whitelist.yml
+```
+
+When the splitter runs, it checks every tagged line against the whitelist. If the tag is approved, the entry is moved into a dedicated inbox:
+
+```text
+writing_inbox/writing_inbox.md
+research_inbox/research_inbox.md
+system_inbox/system_inbox.md
+```
+
+If the tag is not approved, the entry stays in `inbox.md`. This is intentional. The whitelist protects the system from creating random folders for every passing thought.
+
+## How to use the whitelist
+
+Treat `_inbox_scripts/whitelist.yml` as the list of work that is real enough to receive material.
+
+Good whitelist entries are usually:
+
+- active projects
+- bodies of work
+- life domains
+- operating systems
+- research streams
+- content streams
+- archives that deserve a named place
+
+Keep tags short, lowercase, and folder-safe:
+
+```yaml
+tags:
+  - blueprint
+  - writing
+  - research
+  - system
+```
+
+Then capture against those destinations:
+
+```markdown
+- #blueprint - improve the public starter repo structure
+- #writing - turn the inbox idea into a short essay
+- #research - compare different personal knowledge systems
+```
+
+The whitelist should grow slowly. If every idea becomes a new tag, the inbox becomes chaos with extra steps.
+
+## Running the splitter
+
+From `_/systems/inputsys/01_inbox`, run:
+
+```bash
+./_inbox_scripts/split.sh --dry-run
+```
+
+That previews what would move without changing files.
+
+To process valid entries:
+
+```bash
+./_inbox_scripts/split.sh
+```
+
+The script will:
+
+- read `inbox.md`
+- check each entry against `_inbox_scripts/whitelist.yml`
+- create the destination inbox folder if needed
+- append the entry to `tag_inbox/tag_inbox.md`
+- remove moved entries from `inbox.md`
+- leave invalid or malformed entries in place
+
 ## What goes into the Inbox
 
 ### 1. Digital Media & Online Content
