@@ -1,0 +1,36 @@
+# whitelist.yml
+# Source of truth for allowed inbox routing tags.
+# Rule: only tags listed here are allowed to leave inbox.md.
+#
+# Keep tags lowercase letters only. The splitter currently accepts tags like:
+#   - #idea - ...
+#   - #project - ...
+#
+# Add your own tags as your Blueprint develops.
+
+tags:
+  - idea
+  - note
+  - project
+  - task
+  - research
+  - article
+  - book
+  - video
+  - podcast
+  - quote
+  - meeting
+  - conversation
+  - observation
+  - lesson
+  - question
+  - decision
+  - system
+  - strategy
+  - writing
+  - draft
+  - content
+  - backlog
+  - todo
+  - output
+  - archive

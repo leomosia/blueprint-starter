@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Added public-safe InputSys stage READMEs.
+- Added a starter inbox file and whitelist-gated inbox splitter.
+
 ## mvp.2025.3.4.2
 
 - Introduced `_/systems/backlogsys/` as a lightweight manual backlog system.
