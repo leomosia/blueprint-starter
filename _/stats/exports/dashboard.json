@@ -1,0 +1,104 @@
+{
+  "generated": "2025-03-20",
+  "totals": {
+    "todosys": 1,
+    "inputsys": 1,
+    "outputsys": 0
+  },
+  "stages": {
+    "todosys": [
+      {
+        "stage": "00_backlog",
+        "count": 1
+      },
+      {
+        "stage": "01_next",
+        "count": 0
+      },
+      {
+        "stage": "02_doing",
+        "count": 0
+      },
+      {
+        "stage": "03_onhold",
+        "count": 0
+      },
+      {
+        "stage": "04_done",
+        "count": 0
+      },
+      {
+        "stage": "99_archive",
+        "count": 0
+      }
+    ],
+    "inputsys": [
+      {
+        "stage": "01_inbox",
+        "count": 1
+      },
+      {
+        "stage": "02_processing",
+        "count": 0
+      },
+      {
+        "stage": "03_analysis",
+        "count": 0
+      },
+      {
+        "stage": "04_transformation",
+        "count": 0
+      },
+      {
+        "stage": "05_drafting",
+        "count": 0
+      },
+      {
+        "stage": "06_reviewing",
+        "count": 0
+      },
+      {
+        "stage": "07_utilization",
+        "count": 0
+      },
+      {
+        "stage": "08_sharing",
+        "count": 0
+      }
+    ],
+    "outputsys": [
+      {
+        "stage": "01_intake",
+        "count": 0
+      },
+      {
+        "stage": "02_atomization",
+        "count": 0
+      },
+      {
+        "stage": "03_platform",
+        "count": 0
+      },
+      {
+        "stage": "04_publishing",
+        "count": 0
+      },
+      {
+        "stage": "05_amplification",
+        "count": 0
+      },
+      {
+        "stage": "06_engagements",
+        "count": 0
+      },
+      {
+        "stage": "07_analytics",
+        "count": 0
+      },
+      {
+        "stage": "08_archiving",
+        "count": 0
+      }
+    ]
+  }
+}

@@ -21,7 +21,27 @@ slugify() {
 }
 
 year_suffix() {
-  date +%y
+  if [[ -n "${BLUEPRINT_DATE:-}" ]]; then
+    if [[ ! "$BLUEPRINT_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+      echo "Error: BLUEPRINT_DATE must use YYYY-MM-DD format." >&2
+      exit 1
+    fi
+    echo "${BLUEPRINT_DATE:2:2}"
+  else
+    date +%y
+  fi
+}
+
+today() {
+  if [[ -n "${BLUEPRINT_DATE:-}" ]]; then
+    if [[ ! "$BLUEPRINT_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+      echo "Error: BLUEPRINT_DATE must use YYYY-MM-DD format." >&2
+      exit 1
+    fi
+    echo "$BLUEPRINT_DATE"
+  else
+    date +%F
+  fi
 }
 
 find_blueprint_root() {
@@ -242,11 +262,11 @@ inject_meta_fields() {
 
   # Use perl for robust in-place edits
   perl -0777 -i -pe \
-    "s/^content_id:\$/content_id: ${content_id}/m;
-     s/^title:\$/title: ${title}/m;
-     s/^slug:\$/slug: ${slug}/m;
-     s/^created_at:\$/created_at: ${today}/m;
-     s/^last_updated:\$/last_updated: ${today}/m;" \
+    "s/^content_id:\\s*\$/content_id: ${content_id}/m;
+     s/^title:\\s*\$/title: ${title}/m;
+     s/^slug:\\s*\$/slug: ${slug}/m;
+     s/^created_at:\\s*\$/created_at: ${today}/m;
+     s/^last_updated:\\s*\$/last_updated: ${today}/m;" \
     "$meta_path"
 }
 
@@ -357,7 +377,7 @@ echo "📄 Creating metadata file..."
 META_PATH="${TARGET_DIR}/meta.md"
 write_meta "$META_PATH"
 
-TODAY="$(date +%F)"
+TODAY="$(today)"
 inject_meta_fields "$META_PATH" "$CONTENT_ID" "$CONTENT_NAME" "$SLUG" "$TODAY"
 echo "✅ meta.md created"
 

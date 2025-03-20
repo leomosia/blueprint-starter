@@ -20,7 +20,27 @@ slugify() {
 }
 
 year_suffix() {
-  date +%y
+  if [[ -n "${BLUEPRINT_DATE:-}" ]]; then
+    if [[ ! "$BLUEPRINT_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+      echo "❌ Error: BLUEPRINT_DATE must use YYYY-MM-DD format." >&2
+      exit 1
+    fi
+    echo "${BLUEPRINT_DATE:2:2}"
+  else
+    date +%y
+  fi
+}
+
+today() {
+  if [[ -n "${BLUEPRINT_DATE:-}" ]]; then
+    if [[ ! "$BLUEPRINT_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+      echo "❌ Error: BLUEPRINT_DATE must use YYYY-MM-DD format." >&2
+      exit 1
+    fi
+    echo "$BLUEPRINT_DATE"
+  else
+    date +%F
+  fi
 }
 
 find_blueprint_root() {
@@ -111,7 +131,7 @@ blockers: []
 
 ## Evidence
 proof_of_done: []     
-outputs: []   # e.g. content ids c-26xxx, PR links, file paths     
+outputs: []   # e.g. content ids c-YYNNN, PR links, file paths
 
 ## Risk
 risk_level: low | medium | high     
@@ -135,11 +155,11 @@ inject_meta_fields() {
   local today="$5"
 
   perl -0777 -i -pe \
-    "s/^story_id:\$/story_id: ${story_id}/m;
-     s/^title:\$/title: ${title}/m;
-     s/^slug:\$/slug: ${slug}/m;
-     s/^created_at:\$/created_at: ${today}/m;
-     s/^last_updated:\$/last_updated: ${today}/m;" \
+    "s/^story_id:\\s*\$/story_id: ${story_id}/m;
+     s/^title:\\s*\$/title: ${title}/m;
+     s/^slug:\\s*\$/slug: ${slug}/m;
+     s/^created_at:\\s*\$/created_at: ${today}/m;
+     s/^last_updated:\\s*\$/last_updated: ${today}/m;" \
     "$meta_path"
 }
 
@@ -215,7 +235,7 @@ META_PATH="${TARGET_DIR}/meta.md"
 write_meta "$META_PATH"
 echo "   ✅ meta.md (with template)"
 
-TODAY="$(date +%F)"
+TODAY="$(today)"
 inject_meta_fields "$META_PATH" "$STORY_ID" "$STORY_NAME" "$SLUG" "$TODAY"
 echo "   ✅ meta fields injected (ID, title, slug, dates)"
 

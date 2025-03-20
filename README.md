@@ -163,13 +163,27 @@ _/scripts/setup_path.sh --install
 Current helpers include:
 
 ```text
+create_L5.sh
 create_content_item.sh
 create_story.sh
+create_year_runtime.sh
 seed.sh
 move.sh
 output.sh
 stats.sh
 ```
+
+Script-generated examples live in `_/examples/` and selected system folders. These examples show the shape created by the helper scripts and include small README files explaining the command that produced them.
+
+For repeatable demos or reconstructed historical examples, `create_content_item.sh` and `create_story.sh` support a date override:
+
+```bash
+BLUEPRINT_DATE=2025-03-20 _/scripts/create_content_item.sh
+BLUEPRINT_DATE=2025-03-20 _/scripts/create_story.sh
+BLUEPRINT_DATE=2025-03-20 _/scripts/stats.sh
+```
+
+Without `BLUEPRINT_DATE`, the scripts use the current system date.
 
 ## Release Notes
 

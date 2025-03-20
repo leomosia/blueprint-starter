@@ -20,7 +20,7 @@
 #   create_year_runtime.sh 2026 3   # cycles per season (default 3)
 #
 # Tip: Put script on PATH:
-# export PATH="/mnt/c/Users/LIYOLO/dev-local/blueprint/_/scripts:$PATH"
+# export PATH="/path/to/blueprint/_/scripts:$PATH"
 
 set -e
 

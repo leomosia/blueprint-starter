@@ -73,6 +73,18 @@ print(json.dumps(sys.stdin.read())[1:-1])
 PY
 }
 
+today() {
+  if [[ -n "${BLUEPRINT_DATE:-}" ]]; then
+    if [[ ! "$BLUEPRINT_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+      echo "❌ Error: BLUEPRINT_DATE must use YYYY-MM-DD format." >&2
+      exit 1
+    fi
+    echo "$BLUEPRINT_DATE"
+  else
+    date +%F
+  fi
+}
+
 # ---------- Main --------------------------------------------
 echo ""
 echo "📊 BLUEPRINT STATISTICS"
@@ -86,7 +98,7 @@ if [[ -z "$BLUEPRINT_ROOT" ]]; then
 fi
 echo "📍 Blueprint root: $BLUEPRINT_ROOT"
 
-TODAY="$(date +%F)"
+TODAY="$(today)"
 echo "📅 Date: $TODAY"
 
 if [[ "$SNAPSHOT" == "y" || "$SNAPSHOT" == "yes" ]]; then
