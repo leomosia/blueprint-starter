@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## mvp.2025.3.4.4
 
 - Added public-safe InputSys stage READMEs.
 - Added a starter inbox file and whitelist-gated inbox splitter.

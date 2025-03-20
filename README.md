@@ -1,6 +1,6 @@
 # Blueprint
 
-Current release: `mvp.2025.3.4.2`
+Current release: `mvp.2025.3.4.4`
 
 Blueprint is a local-first operating system for organising life, work, projects, research, and repeated practice using plain files. This repository starts with the smallest public form of Blueprint: a clear idea, a working philosophy, and a simple operating loop.
 
@@ -116,12 +116,12 @@ Blueprint evolves through use and is never treated as permanently complete.
 
 ## Release Stage
 
-This release introduces BacklogSys as the lightweight holding place for possible work before it becomes actionable. Blueprint began as a personal local operating system in March 2024, became a public-facing idea in July 2024, introduced the lightweight L5 structure in November 2024, added InputSys and OutputSys in January 2025, added TodoSys in March 2025, and now adds BacklogSys for rough possible work.
+This release introduces public script examples and explainers so users can see how Blueprint helpers create working folders and dashboard files. Blueprint began as a personal local operating system in March 2024, became a public-facing idea in July 2024, introduced the lightweight L5 structure in November 2024, added InputSys and OutputSys in January 2025, added TodoSys and BacklogSys in March 2025, and now adds generated examples that make the starter repo easier to learn from.
 
 The release number follows the Blueprint staged versioning pattern:
 
 ```text
-mvp.2025.3.4.2
+mvp.2025.3.4.4
 ```
 
 Where:
@@ -192,7 +192,7 @@ Blueprint keeps a permanent project history in `CHANGELOG.md`. GitHub release no
 To publish a release from an existing local tag:
 
 ```bash
-_/scripts/release.sh mvp.2025.3.4.2
+_/scripts/release.sh mvp.2025.3.4.4
 ```
 
 ## Getting Started
